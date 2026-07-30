@@ -1,1 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Cart | THE ANIME STORE</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/cart.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+THE ANIME STORE
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="wishlist.html">Wishlist</a>
+
+<a href="cart.html" class="active">
+🛒 Cart
+<span id="cartCount">0</span>
+</a>
+
+</nav>
+
+</header>
+
+<section class="cart-header">
+
+<h1>Shopping Cart</h1>
+
+<p>Your selected anime products</p>
+
+</section>
+
+<section class="cart-container">
+
+<div id="cartItems" class="cart-items">
+
+<!-- Products Load Here -->
+
+</div>
+
+<div class="cart-summary">
+
+<h2>Order Summary</h2>
+
+<div class="summary-row">
+<span>Subtotal</span>
+<span id="subtotal">₹0</span>
+</div>
+
+<div class="summary-row">
+<span>Shipping</span>
+<span id="shipping">FREE</span>
+</div>
+
+<div class="summary-row total">
+<span>Total</span>
+<span id="total">₹0</span>
+</div>
+
+<input
+type="text"
+id="coupon"
+placeholder="Coupon Code">
+
+<button id="applyCoupon">
+
+Apply Coupon
+
+</button>
+
+<a href="checkout.html" class="checkout-btn">
+
+Proceed to Checkout →
+
+</a>
+
+</div>
+
+</section>
+
+<script src="js/cart.js"></script>
+
+</body>
+
+</html>
