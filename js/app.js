@@ -294,3 +294,69 @@ renderProducts(sorted);
 updateCartCount();
 
 renderProducts();
+
+// Toast
+
+const toast=document.getElementById("toast");
+
+function showToast(message){
+
+if(!toast) return;
+
+toast.innerText=message;
+
+toast.classList.add("show");
+
+setTimeout(()=>{
+
+toast.classList.remove("show");
+
+},2000);
+
+}
+
+// Hide Loader
+
+window.addEventListener("load",()=>{
+
+const loader=document.getElementById("loader");
+
+if(loader){
+
+setTimeout(()=>{
+
+loader.style.opacity="0";
+
+loader.style.visibility="hidden";
+
+},1200);
+
+}
+
+});
+
+// Update Add Cart
+
+document.addEventListener("click",function(e){
+
+if(e.target.classList.contains("add-cart")){
+
+showToast("🛒 Added to Cart");
+
+}
+
+});
+
+// Update Wishlist
+
+document.addEventListener("click",function(e){
+
+if(e.target.classList.contains("wishlist")){
+
+e.target.classList.toggle("active");
+
+showToast("❤️ Wishlist Updated");
+
+}
+
+});
