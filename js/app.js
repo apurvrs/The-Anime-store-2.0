@@ -360,3 +360,69 @@ showToast("❤️ Wishlist Updated");
 }
 
 });
+
+/* ===========================
+   QUICK VIEW
+=========================== */
+
+const modal = document.getElementById("quickView");
+
+const quickImage = document.getElementById("quickImage");
+
+const quickTitle = document.getElementById("quickTitle");
+
+const quickCategory = document.getElementById("quickCategory");
+
+const quickPrice = document.getElementById("quickPrice");
+
+document.addEventListener("dblclick",function(e){
+
+const card=e.target.closest(".product");
+
+if(!card) return;
+
+const title=card.querySelector("h3").innerText;
+
+const category=card.querySelector(".product-category").innerText;
+
+const price=card.querySelector(".product-price").innerText;
+
+const image=card.querySelector("img").src;
+
+quickImage.src=image;
+
+quickTitle.innerText=title;
+
+quickCategory.innerText=category;
+
+quickPrice.innerText=price;
+
+modal.style.display="flex";
+
+});
+
+document.getElementById("closeQuick").onclick=function(){
+
+modal.style.display="none";
+
+};
+
+window.onclick=function(e){
+
+if(e.target===modal){
+
+modal.style.display="none";
+
+}
+
+};
+
+/* ===========================
+   LOAD MORE DEMO
+=========================== */
+
+document.getElementById("loadMore").onclick=function(){
+
+showToast("🚀 More products coming soon!");
+
+};
