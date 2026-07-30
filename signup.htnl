@@ -1,1 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Signup | THE ANIME STORE</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+
+THE ANIME STORE
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="signup.html" class="active">
+
+Signup
+
+</a>
+
+</nav>
+
+</header>
+
+<section class="auth-container">
+
+<div class="auth-card">
+
+<h1>Create Account 🚀</h1>
+
+<p>
+
+Join THE ANIME STORE
+
+</p>
+
+<input
+type="text"
+id="signupName"
+placeholder="Full Name">
+
+<input
+type="email"
+id="signupEmail"
+placeholder="Email">
+
+<input
+type="password"
+id="signupPassword"
+placeholder="Password">
+
+<button id="signupBtn">
+
+Create Account
+
+</button>
+
+<p>
+
+Already have an account?
+
+<a href="login.html">
+
+Login
+
+</a>
+
+</p>
+
+</div>
+
+</section>
+
+<script src="js/auth.js"></script>
+
+</body>
+
+</html>
