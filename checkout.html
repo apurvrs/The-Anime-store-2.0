@@ -1,1 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Checkout | THE ANIME STORE</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/checkout.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<div class="logo">
+
+THE ANIME STORE
+
+</div>
+
+<nav>
+
+<a href="index.html">Home</a>
+
+<a href="shop.html">Shop</a>
+
+<a href="wishlist.html">Wishlist</a>
+
+<a href="cart.html">Cart</a>
+
+</nav>
+
+</header>
+
+<section class="checkout-container">
+
+<div class="checkout-form">
+
+<h2>Shipping Details</h2>
+
+<input
+type="text"
+id="name"
+placeholder="Full Name"
+required>
+
+<input
+type="email"
+id="email"
+placeholder="Email Address"
+required>
+
+<input
+type="tel"
+id="phone"
+placeholder="Phone Number"
+required>
+
+<textarea
+id="address"
+placeholder="Complete Address"
+required></textarea>
+
+<input
+type="text"
+id="city"
+placeholder="City">
+
+<input
+type="text"
+id="state"
+placeholder="State">
+
+<input
+type="text"
+id="pincode"
+placeholder="PIN Code">
+
+<h3>Payment Method</h3>
+
+<label>
+<input type="radio" name="payment" value="UPI" checked>
+UPI
+</label>
+
+<label>
+<input type="radio" name="payment" value="Card">
+Debit / Credit Card
+</label>
+
+<label>
+<input type="radio" name="payment" value="COD">
+Cash on Delivery
+</label>
+
+<button id="placeOrder">
+
+Place Order
+
+</button>
+
+</div>
+
+<div class="order-summary">
+
+<h2>Order Summary</h2>
+
+<div id="summaryItems">
+
+Loading...
+
+</div>
+
+<hr>
+
+<h3>
+
+Total:
+<span id="orderTotal">
+
+₹0
+
+</span>
+
+</h3>
+
+</div>
+
+</section>
+
+<script src="js/checkout.js"></script>
+
+</body>
+
+</html>
