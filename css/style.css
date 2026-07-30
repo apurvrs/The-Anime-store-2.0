@@ -1,1 +1,303 @@
+/* ===========================
+   THE ANIME STORE v2.0
+   Global Styles
+=========================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#050510;
+    color:#ffffff;
+    overflow-x:hidden;
+}
+
+/* Background Glow */
+
+body::before{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#00E5FF;
+    filter:blur(180px);
+    opacity:.12;
+    top:-150px;
+    left:-150px;
+    z-index:-1;
+}
+
+body::after{
+    content:"";
+    position:fixed;
+    width:450px;
+    height:450px;
+    background:#7B61FF;
+    filter:blur(180px);
+    opacity:.12;
+    bottom:-150px;
+    right:-150px;
+    z-index:-1;
+}
+
+/* Navbar */
+
+.navbar{
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+
+    position:sticky;
+    top:0;
+
+    background:rgba(15,15,30,.75);
+
+    backdrop-filter:blur(20px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    font-size:28px;
+    font-weight:800;
+
+    background:linear-gradient(
+    90deg,
+    #00E5FF,
+    #7B61FF,
+    #FF2D75
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+
+}
+
+nav{
+
+display:flex;
+gap:28px;
+
+}
+
+nav a{
+
+text-decoration:none;
+color:white;
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:#00E5FF;
+
+}
+
+/* Hero */
+
+.hero{
+
+min-height:90vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+padding:20px;
+
+}
+
+.hero h1{
+
+font-size:64px;
+
+max-width:850px;
+
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+max-width:650px;
+
+color:#cccccc;
+
+font-size:20px;
+
+line-height:1.7;
+
+margin-bottom:35px;
+
+}
+
+.btn{
+
+display:inline-block;
+
+padding:16px 40px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+font-weight:600;
+
+background:linear-gradient(
+90deg,
+#00E5FF,
+#7B61FF
+);
+
+color:white;
+
+transition:.35s;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 30px rgba(0,229,255,.4);
+
+}
+
+/* Categories */
+
+.categories{
+
+padding:100px 8%;
+
+}
+
+.categories h2{
+
+font-size:42px;
+
+text-align:center;
+
+margin-bottom:50px;
+
+}
+
+.category-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(220px,1fr));
+
+gap:30px;
+
+}
+
+.category{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(18px);
+
+padding:45px 25px;
+
+border-radius:24px;
+
+text-align:center;
+
+transition:.35s;
+
+font-size:50px;
+
+}
+
+.category h3{
+
+margin-top:18px;
+
+font-size:24px;
+
+}
+
+.category:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 25px rgba(0,229,255,.25);
+
+}
+
+/* Footer */
+
+footer{
+
+margin-top:80px;
+
+padding:35px;
+
+text-align:center;
+
+border-top:1px solid rgba(255,255,255,.08);
+
+color:#aaaaaa;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:42px;
+
+}
+
+.hero p{
+
+font-size:17px;
+
+}
+
+.navbar{
+
+flex-direction:column;
+
+gap:15px;
+
+}
+
+nav{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+}
+
+}
