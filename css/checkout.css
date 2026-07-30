@@ -1,0 +1,214 @@
+/* ===================================
+   THE ANIME STORE v2.0
+   CHECKOUT PAGE
+=================================== */
+
+.checkout-container{
+
+width:90%;
+
+max-width:1400px;
+
+margin:60px auto;
+
+display:grid;
+
+grid-template-columns:2fr 1fr;
+
+gap:35px;
+
+}
+
+/* Checkout Form */
+
+.checkout-form{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:35px;
+
+border-radius:25px;
+
+}
+
+.checkout-form h2{
+
+margin-bottom:25px;
+
+font-size:32px;
+
+}
+
+.checkout-form input,
+
+.checkout-form textarea{
+
+width:100%;
+
+padding:16px;
+
+margin:12px 0;
+
+border:none;
+
+border-radius:14px;
+
+background:rgba(255,255,255,.08);
+
+color:white;
+
+font-size:16px;
+
+outline:none;
+
+}
+
+.checkout-form textarea{
+
+height:130px;
+
+resize:none;
+
+}
+
+.checkout-form h3{
+
+margin:25px 0 15px;
+
+}
+
+.checkout-form label{
+
+display:block;
+
+margin:12px 0;
+
+font-size:17px;
+
+cursor:pointer;
+
+}
+
+.checkout-form input[type="radio"]{
+
+width:auto;
+
+margin-right:10px;
+
+}
+
+#placeOrder{
+
+width:100%;
+
+margin-top:30px;
+
+padding:18px;
+
+border:none;
+
+border-radius:40px;
+
+cursor:pointer;
+
+font-size:18px;
+
+font-weight:700;
+
+background:linear-gradient(90deg,#00E5FF,#7B61FF);
+
+color:white;
+
+transition:.35s;
+
+}
+
+#placeOrder:hover{
+
+transform:translateY(-4px);
+
+box-shadow:0 15px 35px rgba(0,229,255,.25);
+
+}
+
+/* Order Summary */
+
+.order-summary{
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,255,255,.08);
+
+backdrop-filter:blur(20px);
+
+padding:30px;
+
+border-radius:25px;
+
+height:max-content;
+
+position:sticky;
+
+top:100px;
+
+}
+
+.order-summary h2{
+
+margin-bottom:25px;
+
+}
+
+.summary-item{
+
+display:flex;
+
+justify-content:space-between;
+
+margin:18px 0;
+
+padding-bottom:12px;
+
+border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.order-summary hr{
+
+margin:25px 0;
+
+border:1px solid rgba(255,255,255,.08);
+
+}
+
+#orderTotal{
+
+color:#00E5FF;
+
+font-size:30px;
+
+font-weight:700;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.checkout-container{
+
+grid-template-columns:1fr;
+
+}
+
+.order-summary{
+
+position:static;
+
+}
+
+}
