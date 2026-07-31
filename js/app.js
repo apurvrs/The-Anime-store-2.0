@@ -399,13 +399,13 @@ quickPrice.innerText=price;
 
 modal.style.display="flex";
 
-});
+const closeQuick = document.getElementById("closeQuick");
 
-document.getElementById("closeQuick").onclick=function(){
-
-modal.style.display="none";
-
-};
+if (closeQuick) {
+    closeQuick.onclick = function () {
+        modal.style.display = "none";
+    };
+}
 
 window.onclick=function(e){
 
@@ -420,14 +420,10 @@ modal.style.display="none";
 /* ===========================
    LOAD MORE DEMO
 =========================== */
-const closeQuick = document.getElementById("closeQuick");
+const loadMore = document.getElementById("loadMore");
 
-if (closeQuick) {
-    closeQuick.onclick = function () {
-        modal.style.display = "none";
+if (loadMore) {
+    loadMore.onclick = function () {
+        showToast("🚀 More products coming soon!");
     };
 }
-
-showToast("🚀 More products coming soon!");
-
-};
