@@ -420,8 +420,13 @@ modal.style.display="none";
 /* ===========================
    LOAD MORE DEMO
 =========================== */
+const closeQuick = document.getElementById("closeQuick");
 
-document.getElementById("loadMore").onclick=function(){
+if (closeQuick) {
+    closeQuick.onclick = function () {
+        modal.style.display = "none";
+    };
+}
 
 showToast("🚀 More products coming soon!");
 
